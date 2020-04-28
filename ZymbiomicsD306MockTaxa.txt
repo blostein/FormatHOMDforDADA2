@@ -1,0 +1,8 @@
+>Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas
+>Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;Escherichia
+>Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;Salmonella
+>Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus
+>Bacteria;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus
+>Bacteria;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus
+>Bacteria;Firmicutes;Bacilli;Bacillales;Listeriaceae;Listeria
+>Bacteria;Firmicutes;Bacilli;Bacillales;Bacillaceae;Bacillus

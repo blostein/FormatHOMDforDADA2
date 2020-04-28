@@ -1,0 +1,2 @@
+These DADA2 formatted files with mock fasta files appended were created using the HOMD database version 15 (specifically, these files: 
+HOMD_16S_rRNA_RefSeq_V15.2.p9.fasta HOMD_16S_rRNA_RefSeq_V15.2.mothur.taxonomy) and the mocks from 
