@@ -13,4 +13,9 @@ AddMocks.py requires:
 
 2-4) DADA2 formatted databases outputed from CreateTaxFile.py in the following order: ToGenusAssignTaxa.fasta, AssignSpecies.fasta, ToSpeciesAssignTaxa.fasta, 
 5) Path to a folder containing fasta files (one each per species in mock) with sequences 
-    - fasta files in this folder must follow naming convention: GenusName_SpeciesName_16S_3232
+    - fasta files in this folder must follow naming convention: GenusName_SpeciesName_16S_3323232.fasta
+    - fasta files should look like: 
+        >Bacillus_subtilis_16S_1
+        TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGC......
+        >Bacillus_subtilis_16S_2
+        TTTATCGGAGAGTTTGATCCTGGCTCAGGACGAACGTA...

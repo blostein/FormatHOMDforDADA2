@@ -37,15 +37,15 @@ def main():
             genus = line.split(';')[5]
             genus_file=genus.strip()+'*.fasta'
         #print(genus_file)
-        for file in os.listdir(MockFolder):
-            if fnmatch.fnmatch(file, genus_file):
-                with open(os.path.join(MockFolder,file)) as fastafile:
-                    count=0
-                    for line2 in fastafile: 
-                        count+=1
-                        if count % 2 == 0:
-                            genusfile.write(line)
-                            genusfile.write(line2)
+            for file in os.listdir(MockFolder):
+                if fnmatch.fnmatch(file, genus_file):
+                    with open(os.path.join(MockFolder,file)) as fastafile:
+                        count=0
+                        for line2 in fastafile: 
+                            count+=1
+                            if count % 2 == 0:
+                                genusfile.write(line)
+                                genusfile.write(line2)
                             
     #Create copy of specific species assignment file for dada2 
     #empty list to store contents from reading file
@@ -65,17 +65,17 @@ def main():
             genus = line.split(';')[5]
             genus_file=genus.strip()+'*.fasta'
        # print(genus_file)
-        for file in os.listdir(MockFolder):
-            if fnmatch.fnmatch(file, genus_file):
-                genusname = file.split('_')[0]
-                speciesname = file.split('_')[1]
-                with open(os.path.join(MockFolder,file)) as fastafile:
-                    count=0
-                    for line2 in fastafile: 
-                        count+=1
-                        if count % 2 == 0:
-                            speciesfile.write('>'+genusname[0]+speciesname[0]+str(count)+' '+genusname+' '+speciesname+'\n')
-                            speciesfile.write(line2)
+            for file in os.listdir(MockFolder):
+                if fnmatch.fnmatch(file, genus_file):
+                    genusname = file.split('_')[0]
+                    speciesname = file.split('_')[1]
+                    with open(os.path.join(MockFolder,file)) as fastafile:
+                        count=0
+                        for line2 in fastafile: 
+                            count+=1
+                            if count % 2 == 0:
+                                speciesfile.write('>'+genusname[0]+speciesname[0]+str(count)+' '+genusname+' '+speciesname+'\n')
+                                speciesfile.write(line2)
                             
     #create empty file with assign taxa to species file
     file_contents = []
@@ -94,18 +94,18 @@ def main():
             genus = line.split(';')[5]
             genus_file=genus.strip()+'*.fasta'
         #print(genus_file)
-        for file in os.listdir(MockFolder):
-            if fnmatch.fnmatch(file, genus_file):
-                genusname = file.split('_')[0]
-                speciesname = file.split('_')[1]
-                with open(os.path.join(MockFolder,file)) as fastafile:
-                    count=0
-                    for line2 in fastafile: 
-                        count+=1
-                        if count % 2 == 0:
+            for file in os.listdir(MockFolder):
+                if fnmatch.fnmatch(file, genus_file):
+                    genusname = file.split('_')[0]
+                    speciesname = file.split('_')[1]
+                    with open(os.path.join(MockFolder,file)) as fastafile:
+                        count=0
+                        for line2 in fastafile: 
+                            count+=1
+                            if count % 2 == 0:
                             #genusfile.write(line)
-                            genusfile.write(line.strip()+';'+speciesname+';'+'\n')
-                            genusfile.write(line2)
+                                genusfile.write(line.strip()+';'+speciesname+';'+'\n')
+                                genusfile.write(line2)
                             
 if __name__ == "__main__":
     # Define the getopt parameters
